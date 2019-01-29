@@ -72,7 +72,8 @@ class Student
   def update 
     sql = <<-SQL
       UPDATE students
-      SET 
+      SET name = self.name, grade = self.grade 
+      WHERE id = self.id
     SQL
   end
   # Remember, you can access your database connection anywhere in this class
