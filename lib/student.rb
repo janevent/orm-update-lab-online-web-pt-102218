@@ -71,7 +71,8 @@ class Student
   
   def update 
     sql = <<-SQL
-      
+      UPDATE students
+      SET 
     SQL
   end
   # Remember, you can access your database connection anywhere in this class
